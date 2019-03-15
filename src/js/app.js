@@ -30,7 +30,28 @@ App = {
       // Connect provider to interact with contract
       App.contracts.Election.setProvider(App.web3Provider);
 
+      App.listenForEvents();
+
       return App.render();
+    });
+  },
+
+  listenForEvents: function() {
+    //Restart Chrome if you are unable to receive this event
+    //github.com/MetaMask/metamask-extensions/issues/2393
+    
+    //Get a deployed instance and subscribe (watch)
+    App.contracts.Election.deployed().then(function(instance) {
+      //We are not passing a filter {}
+      //Passing metadata to event
+      instance.votedEvent({}, {
+        fromBlock: 0,
+        toBlock: 'latest'
+      }).watch(function(error, event) {
+        console.log("event triggered", event)
+        //Reload when a new vote is recorded
+        App.render();
+      });
     });
   },
 

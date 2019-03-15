@@ -21,7 +21,6 @@ contract Election {
 
 
    // Store accounts that have voted
-   //defaults to false for bools
     mapping(address => bool) public voters;
 
     //Fetch Patient
@@ -80,4 +79,4 @@ contract Election {
         // trigger voted event
         emit votedEvent(_candidateId);
     }
-} 
+}

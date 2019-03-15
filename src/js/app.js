@@ -87,6 +87,11 @@ App = {
           var id = candidate[0];
           var name = candidate[1];
           var voteCount = candidate[2];
+          var allergies = candidate[3];
+          var bloodType = candidate[4];
+          var smoker = candidate[5];
+
+          console.log(candidate[1] + ": Allergies: " + candidate[3] + " Blood type: " + candidate[4] + " Birth date: " + candidate[5]);
 
           // Render candidate Result
           var candidateTemplate = "<tr><th>" + id + "</th><td>" + name + "</td><td>" + voteCount + "</td></tr>";

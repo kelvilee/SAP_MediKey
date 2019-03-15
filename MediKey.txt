@@ -1,0 +1,62 @@
+**************** I N T R O ******************************
+Afghanistan, Syria, Yemeni, places with ongoing armed conflict, they always have one thing in common. Overwhelming number of patients in comparison to doctors.
+
+It takes 10 to 20 minutes just to identify a patient's blood type, requiring resources and time that could be applied more efficiently should that information be known immediately.
+
+WHAT IF medical staff can access medical records such as blood type, past vaccinations, hereditary illness, ongoing medication, any significant detail on demand from an unconscious patient with a valid consent?
+
+MediKey addresses this concept directly through the use of blockchain.
+
+MediKey is a block chain application that allows users to store medical records onto a network.
+The data inside the records are gated by digital keys encrypted in Shamir's Secret Sharing algorithm.
+Through Shamir's Secret Sharing algorithm, digital keys can be split into two or more components which can be shared by multiple parties and can be combined together to be able to access the data.
+
+What does all this have to do with Medical Records? Unconscious patients?
+Say Jimmy is in a war zone. Jimmy wants to keep his medical records secure on the cloud so
+that it can stay accessible and static and decides to do that through MediKey.
+
+When entering medical information on MediKey, Jimmy will be given a full key for access to his records AND 
+will be given an option to give half of a copy of his Key to an emergency contact of his choice. Another half of the key will be given to organizations such as Doctors Without Borders or UN peace keeping medical personnel.
+
+Jimmy was going to school with his friend, who has a share of the digital key, and gets into an accident and becomes unconscious, When Jimmy is rushed in to the hospital, his friend and the hospital can combine their halves of digital keys together to access all the necessary information about Jimmy to perform necessary procedures and precautions.
+
+
+
+
+
+
+
+
+***************** GUI
+
+
+
+
+
+
+
+
+***************** T E C H  D E M O *************************
+The 
+
+MediKey provides the patient full access and control over their data, they will have the capability
+to provide differing levels of access to various users, by assigning a set of access permissions and
+designating who can query and write data to their blockchain. 
+
+*ganache - host the network
+*truffle - 
+*
+*
+
+
+
+
+
+
+
+**************** C O N C L U S I O N ************************
+MediKey provides the patient full access and control over their data, they will have the capability
+to provide differing levels of access to various users, by assigning a set of access permissions and
+designating who can query and write data to their blockchain. 
+
+In places where people are getting mistreated, injured, or neglected, it is crucial 

@@ -12,6 +12,9 @@ contract Election {
         uint id;
         string name;
         uint voteCount;
+        bool allergies;
+        string bloodType;
+        string birthdate;
     }
 
     //Store a Patient
@@ -43,20 +46,22 @@ contract Election {
 
     //Runs whenever migrated and deployed to blockchain; therefore public
     constructor () public {
-        addCandidate("Patient 1");
-        addCandidate("Patient 2");
+        addCandidate("Christy Yau", true, "A", "10-09-1989");
+        addCandidate("Kelvin Lee", false, "AB", "04-25-1994");
+        addCandidate("Lena Kwan", true, "O", "03-10-2010");
+        addCandidate("Peter Ahn", true, "B", "09-27-1990");
     }
 
     /* Local variables are prepended w/ underscore.
     This is a private function as the public interface
     should not have access to this; only want
     contract to be able to do this */
-    function addCandidate(string memory _name) private {
+    function addCandidate(string memory _name, bool _allergies, string memory _bloodType, string memory _smoker) private {
         /*We want candidatesCount to represent id
         of Candidate, so we increment first */
         candidatesCount++;
         //params based on struc above: id, name, voteCount
-        candidates[candidatesCount] = Candidate(candidatesCount, _name, 0);
+        candidates[candidatesCount] = Candidate(candidatesCount, _name, 0, _allergies, _bloodType, _smoker);
     }
 
     function vote (uint _candidateId) public {

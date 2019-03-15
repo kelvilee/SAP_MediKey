@@ -14,9 +14,12 @@
   "license": "ISC",
   "devDependencies": {
     "lite-server": "^2.3.0"
+<<<<<<< HEAD
   },
   "dependencies": {
     "shamirs-secret-sharing": "^1.0.0",
     "solc": "^0.5.6"
+=======
+>>>>>>> parent of bcf44f3... 1 vote per account works
   }
 }

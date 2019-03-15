@@ -4,35 +4,12 @@
     {
       "constant": true,
       "inputs": [],
-      "name": "candidatesCount",
+      "name": "candidate",
       "outputs": [
         {
           "name": "",
-          "type": "uint256"
-        }
-      ],
-      "payable": false,
-      "stateMutability": "view",
-      "type": "function",
-      "signature": "0x2d35a8a2"
-    },
-    {
-      "constant": true,
-      "inputs": [
-        {
-          "name": "",
-          "type": "uint256"
-        }
-      ],
-      "name": "candidates",
-      "outputs": [
-        {
-          "name": "id",
-          "type": "uint256"
-        },
-        {
-          "name": "name",
           "type": "string"
+<<<<<<< HEAD
         },
         {
           "name": "voteCount",
@@ -49,32 +26,14 @@
         {
           "name": "birthdate",
           "type": "string"
+=======
+>>>>>>> parent of bcf44f3... 1 vote per account works
         }
       ],
       "payable": false,
       "stateMutability": "view",
       "type": "function",
-      "signature": "0x3477ee2e"
-    },
-    {
-      "constant": true,
-      "inputs": [
-        {
-          "name": "",
-          "type": "address"
-        }
-      ],
-      "name": "voters",
-      "outputs": [
-        {
-          "name": "",
-          "type": "bool"
-        }
-      ],
-      "payable": false,
-      "stateMutability": "view",
-      "type": "function",
-      "signature": "0xa3ec138d"
+      "signature": "0x6c8381f8"
     },
     {
       "inputs": [],
@@ -82,50 +41,37 @@
       "stateMutability": "nonpayable",
       "type": "constructor",
       "signature": "constructor"
-    },
-    {
-      "anonymous": false,
-      "inputs": [
-        {
-          "indexed": true,
-          "name": "_candidateId",
-          "type": "uint256"
-        }
-      ],
-      "name": "votedEvent",
-      "type": "event",
-      "signature": "0xfff3c900d938d21d0990d786e819f29b8d05c1ef587b462b939609625b684b16"
-    },
-    {
-      "constant": false,
-      "inputs": [
-        {
-          "name": "_candidateId",
-          "type": "uint256"
-        }
-      ],
-      "name": "vote",
-      "outputs": [],
-      "payable": false,
-      "stateMutability": "nonpayable",
-      "type": "function",
-      "signature": "0x0121b93f"
     }
   ],
+<<<<<<< HEAD
   "bytecode": "0x608060405234801561001057600080fd5b506100cc6040518060400160405280600b81526020017f436872697374792059617500000000000000000000000000000000000000000081525060016040518060400160405280600181526020017f41000000000000000000000000000000000000000000000000000000000000008152506040518060400160405280600a81526020017f31302d30392d3139383900000000000000000000000000000000000000000000815250610302640100000000026401000000009004565b6101876040518060400160405280600a81526020017f4b656c76696e204c65650000000000000000000000000000000000000000000081525060006040518060400160405280600281526020017f41420000000000000000000000000000000000000000000000000000000000008152506040518060400160405280600a81526020017f30342d32352d3139393400000000000000000000000000000000000000000000815250610302640100000000026401000000009004565b6102426040518060400160405280600981526020017f4c656e61204b77616e000000000000000000000000000000000000000000000081525060016040518060400160405280600181526020017f4f000000000000000000000000000000000000000000000000000000000000008152506040518060400160405280600a81526020017f30332d31302d3230313000000000000000000000000000000000000000000000815250610302640100000000026401000000009004565b6102fd6040518060400160405280600981526020017f50657465722041686e000000000000000000000000000000000000000000000081525060016040518060400160405280600181526020017f42000000000000000000000000000000000000000000000000000000000000008152506040518060400160405280600a81526020017f30392d32372d3139393000000000000000000000000000000000000000000000815250610302640100000000026401000000009004565b610494565b6002600081548092919060010191905055506040518060c001604052806002548152602001858152602001600081526020018415158152602001838152602001828152506001600060025481526020019081526020016000206000820151816000015560208201518160010190805190602001906103819291906103ef565b506040820151816002015560608201518160030160006101000a81548160ff02191690831515021790555060808201518160040190805190602001906103c89291906103ef565b5060a08201518160050190805190602001906103e59291906103ef565b5090505050505050565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061043057805160ff191683800117855561045e565b8280016001018555821561045e579182015b8281111561045d578251825591602001919060010190610442565b5b50905061046b919061046f565b5090565b61049191905b8082111561048d576000816000905550600101610475565b5090565b90565b61062f806104a36000396000f3fe608060405234801561001057600080fd5b5060043610610069576000357c0100000000000000000000000000000000000000000000000000000000900480630121b93f1461006e5780632d35a8a21461009c5780633477ee2e146100ba578063a3ec138d14610252575b600080fd5b61009a6004803603602081101561008457600080fd5b81019080803590602001909291905050506102ae565b005b6100a46103cc565b6040518082815260200191505060405180910390f35b6100e6600480360360208110156100d057600080fd5b81019080803590602001909291905050506103d2565b6040518087815260200180602001868152602001851515151581526020018060200180602001848103845289818151815260200191508051906020019080838360005b83811015610144578082015181840152602081019050610129565b50505050905090810190601f1680156101715780820380516001836020036101000a031916815260200191505b50848103835286818151815260200191508051906020019080838360005b838110156101aa57808201518184015260208101905061018f565b50505050905090810190601f1680156101d75780820380516001836020036101000a031916815260200191505b50848103825285818151815260200191508051906020019080838360005b838110156102105780820151818401526020810190506101f5565b50505050905090810190601f16801561023d5780820380516001836020036101000a031916815260200191505b50995050505050505050505060405180910390f35b6102946004803603602081101561026857600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506105e3565b604051808215151515815260200191505060405180910390f35b6000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff161561030457600080fd5b60008111801561031657506002548111155b61031f57600080fd5b60016000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff0219169083151502179055506001600082815260200190815260200160002060020160008154809291906001019190505550807ffff3c900d938d21d0990d786e819f29b8d05c1ef587b462b939609625b684b1660405160405180910390a250565b60025481565b6001602052806000526040600020600091509050806000015490806001018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156104845780601f1061045957610100808354040283529160200191610484565b820191906000526020600020905b81548152906001019060200180831161046757829003601f168201915b5050505050908060020154908060030160009054906101000a900460ff1690806004018054600181600116156101000203166002900480601f01602080910402602001604051908101604052809291908181526020018280546001816001161561010002031660029004801561053b5780601f106105105761010080835404028352916020019161053b565b820191906000526020600020905b81548152906001019060200180831161051e57829003601f168201915b505050505090806005018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156105d95780601f106105ae576101008083540402835291602001916105d9565b820191906000526020600020905b8154815290600101906020018083116105bc57829003601f168201915b5050505050905086565b60006020528060005260406000206000915054906101000a900460ff168156fea165627a7a72305820fb655d5d8496d7899cc3121a86240fc578011cc36a528bca073a57e62288fb6e0029",
   "deployedBytecode": "0x608060405234801561001057600080fd5b5060043610610069576000357c0100000000000000000000000000000000000000000000000000000000900480630121b93f1461006e5780632d35a8a21461009c5780633477ee2e146100ba578063a3ec138d14610252575b600080fd5b61009a6004803603602081101561008457600080fd5b81019080803590602001909291905050506102ae565b005b6100a46103cc565b6040518082815260200191505060405180910390f35b6100e6600480360360208110156100d057600080fd5b81019080803590602001909291905050506103d2565b6040518087815260200180602001868152602001851515151581526020018060200180602001848103845289818151815260200191508051906020019080838360005b83811015610144578082015181840152602081019050610129565b50505050905090810190601f1680156101715780820380516001836020036101000a031916815260200191505b50848103835286818151815260200191508051906020019080838360005b838110156101aa57808201518184015260208101905061018f565b50505050905090810190601f1680156101d75780820380516001836020036101000a031916815260200191505b50848103825285818151815260200191508051906020019080838360005b838110156102105780820151818401526020810190506101f5565b50505050905090810190601f16801561023d5780820380516001836020036101000a031916815260200191505b50995050505050505050505060405180910390f35b6102946004803603602081101561026857600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506105e3565b604051808215151515815260200191505060405180910390f35b6000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff161561030457600080fd5b60008111801561031657506002548111155b61031f57600080fd5b60016000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff0219169083151502179055506001600082815260200190815260200160002060020160008154809291906001019190505550807ffff3c900d938d21d0990d786e819f29b8d05c1ef587b462b939609625b684b1660405160405180910390a250565b60025481565b6001602052806000526040600020600091509050806000015490806001018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156104845780601f1061045957610100808354040283529160200191610484565b820191906000526020600020905b81548152906001019060200180831161046757829003601f168201915b5050505050908060020154908060030160009054906101000a900460ff1690806004018054600181600116156101000203166002900480601f01602080910402602001604051908101604052809291908181526020018280546001816001161561010002031660029004801561053b5780601f106105105761010080835404028352916020019161053b565b820191906000526020600020905b81548152906001019060200180831161051e57829003601f168201915b505050505090806005018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156105d95780601f106105ae576101008083540402835291602001916105d9565b820191906000526020600020905b8154815290600101906020018083116105bc57829003601f168201915b5050505050905086565b60006020528060005260406000206000915054906101000a900460ff168156fea165627a7a72305820fb655d5d8496d7899cc3121a86240fc578011cc36a528bca073a57e62288fb6e0029",
   "sourceMap": "122:2698:0:-;;;1413:279;8:9:-1;5:2;;;30:1;27;20:12;5:2;1413:279:0;1446:52;;;;;;;;;;;;;;;;;;1474:4;1446:52;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:12;;;:52;;;:::i;:::-;1509:53;;;;;;;;;;;;;;;;;;1536:5;1509:53;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:12;;;:53;;;:::i;:::-;1573:50;;;;;;;;;;;;;;;;;;1599:4;1573:50;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:12;;;:50;;;:::i;:::-;1634;;;;;;;;;;;;;;;;;;1660:4;1634:50;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:12;;;:50;;;:::i;:::-;122:2698;;1895:422;2122:15;;:17;;;;;;;;;;;;;2240:69;;;;;;;;2250:15;;2240:69;;;;2267:5;2240:69;;;;2274:1;2240:69;;;;2277:10;2240:69;;;;;;2289:10;2240:69;;;;2301:7;2240:69;;;2210:10;:27;2221:15;;2210:27;;;;;;;;;;;:99;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;1895:422;;;;:::o;122:2698::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
   "deployedSourceMap": "122:2698:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;122:2698:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2325:492;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;2325:492:0;;;;;;;;;;;;;;;;;:::i;:::-;;1213:27;;;:::i;:::-;;;;;;;;;;;;;;;;;;;996:44;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;996:44:0;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;996:44:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;996:44:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;996:44:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;519:38;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;519:38:0;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;2325:492;2437:6;:18;2444:10;2437:18;;;;;;;;;;;;;;;;;;;;;;;;;2436:19;2428:28;;;;;;2530:1;2515:12;:16;:51;;;;;2551:15;;2535:12;:31;;2515:51;2507:60;;;;;;2641:4;2620:6;:18;2627:10;2620:18;;;;;;;;;;;;;;;;:25;;;;;;;;;;;;;;;;;;2698:10;:24;2709:12;2698:24;;;;;;;;;;;:34;;;:37;;;;;;;;;;;;;2796:12;2785:24;;;;;;;;;;2325:492;:::o;1213:27::-;;;;:::o;996:44::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;519:38::-;;;;;;;;;;;;;;;;;;;;;;:::o",
   "source": "//run truffle version\r\n//Truffle v5.0.0-beta.2\r\n//Solidity v0.5.0 (solc-js)\r\n//Node v8.11.3\r\n\r\npragma solidity ^0.5.0;\r\n\r\ncontract Election {\r\n    //Model a Patient; must be instantiated to create a Patient\r\n    struct Candidate {\r\n        //unsigned int = uint\r\n        uint id;\r\n        string name;\r\n        uint voteCount;\r\n        bool allergies;\r\n        string bloodType;\r\n        string birthdate;\r\n    }\r\n\r\n    //Store a Patient\r\n\r\n\r\n   // Store accounts that have voted\r\n   //defaults to false for bools\r\n    mapping(address => bool) public voters;\r\n\r\n    //Fetch Patient\r\n    /*Mapping is like associative array or hash w/ key : value\r\n    Mapping takes the data types expected for each key and pair;\r\n    in this case, we are storing it with the unsigned integer ids\r\n    as keys and the Patient struct as the value\r\n    By declaring it public, we automatically have getter\r\n    Can't iterate or determine size of map; will return default\r\n    value of empty Candidate struct */\r\n    mapping(uint => Candidate) public candidates;\r\n\r\n    /* Counter cache keeps track of the number of patients\r\n    so we can fetch every one and know how many there are in\r\n    total. Default value is 0 for uint*/\r\n    uint public candidatesCount;\r\n\r\n    // voted event\r\n    event votedEvent (\r\n        uint indexed _candidateId\r\n    );\r\n\r\n    //Runs whenever migrated and deployed to blockchain; therefore public\r\n    constructor () public {\r\n        addCandidate(\"Christy Yau\", true, \"A\", \"10-09-1989\");\r\n        addCandidate(\"Kelvin Lee\", false, \"AB\", \"04-25-1994\");\r\n        addCandidate(\"Lena Kwan\", true, \"O\", \"03-10-2010\");\r\n        addCandidate(\"Peter Ahn\", true, \"B\", \"09-27-1990\");\r\n    }\r\n\r\n    /* Local variables are prepended w/ underscore.\r\n    This is a private function as the public interface\r\n    should not have access to this; only want\r\n    contract to be able to do this */\r\n    function addCandidate(string memory _name, bool _allergies, string memory _bloodType, string memory _smoker) private {\r\n        /*We want candidatesCount to represent id\r\n        of Candidate, so we increment first */\r\n        candidatesCount++;\r\n        //params based on struc above: id, name, voteCount\r\n        candidates[candidatesCount] = Candidate(candidatesCount, _name, 0, _allergies, _bloodType, _smoker);\r\n    }\r\n\r\n    function vote (uint _candidateId) public {\r\n        // require that they haven't voted before\r\n        require(!voters[msg.sender]);\r\n\r\n        // require a valid candidate\r\n        require(_candidateId > 0 && _candidateId <= candidatesCount);\r\n\r\n        // record that voter has voted\r\n        voters[msg.sender] = true;\r\n\r\n        // update candidate vote Count\r\n        candidates[_candidateId].voteCount ++;\r\n\r\n        // trigger voted event\r\n        emit votedEvent(_candidateId);\r\n    }\r\n} ",
+=======
+  "bytecode": "0x608060405234801561001057600080fd5b506040518060400160405280600981526020017f50617469656e74203100000000000000000000000000000000000000000000008152506000908051906020019061005c929190610062565b50610107565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106100a357805160ff19168380011785556100d1565b828001600101855582156100d1579182015b828111156100d05782518255916020019190600101906100b5565b5b5090506100de91906100e2565b5090565b61010491905b808211156101005760008160009055506001016100e8565b5090565b90565b61019a806101166000396000f3fe608060405234801561001057600080fd5b5060043610610048576000357c0100000000000000000000000000000000000000000000000000000000900480636c8381f81461004d575b600080fd5b6100556100d0565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561009557808201518184015260208101905061007a565b50505050905090810190601f1680156100c25780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156101665780601f1061013b57610100808354040283529160200191610166565b820191906000526020600020905b81548152906001019060200180831161014957829003601f168201915b50505050508156fea165627a7a723058208845bb578f38bffa5d237c337dd37c982f0e6166e40e85ca9103f3295f9b9c650029",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b5060043610610048576000357c0100000000000000000000000000000000000000000000000000000000900480636c8381f81461004d575b600080fd5b6100556100d0565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561009557808201518184015260208101905061007a565b50505050905090810190601f1680156100c25780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156101665780601f1061013b57610100808354040283529160200191610166565b820191906000526020600020905b81548152906001019060200180831161014957829003601f168201915b50505050508156fea165627a7a723058208845bb578f38bffa5d237c337dd37c982f0e6166e40e85ca9103f3295f9b9c650029",
+  "sourceMap": "122:308:0:-;;;363:64;8:9:-1;5:2;;;30:1;27;20:12;5:2;363:64:0;396:23;;;;;;;;;;;;;;;;;:9;:23;;;;;;;;;;;;:::i;:::-;;122:308;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
+  "deployedSourceMap": "122:308:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;122:308:0;;;;;;;;;;;;;;;;;;;;250:23;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;250:23:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "//run truffle version\r\n//Truffle v5.0.0-beta.2\r\n//Solidity v0.5.0 (solc-js)\r\n//Node v8.11.3\r\n\r\npragma solidity ^0.5.0;\r\n\r\ncontract Election {\r\n    //Store patient\r\n    //Read patient\r\n    //public = gives state variable and assigned getter auto\r\n    string public candidate;\r\n\r\n    //Constructor\r\n    //Runs whenever deployed to blockchain; therefore public\r\n    constructor () public {\r\n        candidate = \"Patient 1\";\r\n    }\r\n}",
+>>>>>>> parent of bcf44f3... 1 vote per account works
   "sourcePath": "C:/Users/Christy/Documents/CST/Hackathon/SAP_MediKey/contracts/Election.sol",
   "ast": {
     "absolutePath": "/C/Users/Christy/Documents/CST/Hackathon/SAP_MediKey/contracts/Election.sol",
     "exportedSymbols": {
       "Election": [
+<<<<<<< HEAD
         130
       ]
     },
     "id": 131,
+=======
+        12
+      ]
+    },
+    "id": 13,
+>>>>>>> parent of bcf44f3... 1 vote per account works
     "nodeType": "SourceUnit",
     "nodes": [
       {
@@ -145,14 +91,21 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
+<<<<<<< HEAD
         "id": 130,
         "linearizedBaseContracts": [
           130
+=======
+        "id": 12,
+        "linearizedBaseContracts": [
+          12
+>>>>>>> parent of bcf44f3... 1 vote per account works
         ],
         "name": "Election",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
+<<<<<<< HEAD
             "canonicalName": "Election.Candidate",
             "id": 14,
             "members": [
@@ -429,15 +382,35 @@
               "name": "uint",
               "nodeType": "ElementaryTypeName",
               "src": "1213:4:0",
+=======
+            "constant": false,
+            "id": 3,
+            "name": "candidate",
+            "nodeType": "VariableDeclaration",
+            "scope": 12,
+            "src": "250:23:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 2,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "250:6:0",
+>>>>>>> parent of bcf44f3... 1 vote per account works
               "typeDescriptions": {
-                "typeIdentifier": "t_uint256",
-                "typeString": "uint256"
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
               }
             },
             "value": null,
             "visibility": "public"
           },
           {
+<<<<<<< HEAD
             "anonymous": false,
             "documentation": null,
             "id": 28,
@@ -484,10 +457,17 @@
               "id": 59,
               "nodeType": "Block",
               "src": "1435:257:0",
+=======
+            "body": {
+              "id": 10,
+              "nodeType": "Block",
+              "src": "385:42:0",
+>>>>>>> parent of bcf44f3... 1 vote per account works
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
+<<<<<<< HEAD
                     "arguments": [
                       {
                         "argumentTypes": null,
@@ -593,11 +573,14 @@
                       }
                     },
                     "id": 36,
+=======
+                    "id": 8,
+>>>>>>> parent of bcf44f3... 1 vote per account works
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
-                    "kind": "functionCall",
                     "lValueRequested": false,
+<<<<<<< HEAD
                     "names": [],
                     "nodeType": "FunctionCall",
                     "src": "1446:52:0",
@@ -726,11 +709,48 @@
                     "names": [],
                     "nodeType": "FunctionCall",
                     "src": "1509:53:0",
+=======
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 6,
+                      "name": "candidate",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3,
+                      "src": "396:9:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "50617469656e742031",
+                      "id": 7,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "string",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "408:11:0",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_stringliteral_8aa4dd96d86b4ca976cb6ef398e7f67be9c9e5dc1b0eadb7ea789df34aec192e",
+                        "typeString": "literal_string \"Patient 1\""
+                      },
+                      "value": "Patient 1"
+                    },
+                    "src": "396:23:0",
+>>>>>>> parent of bcf44f3... 1 vote per account works
                     "typeDescriptions": {
-                      "typeIdentifier": "t_tuple$__$",
-                      "typeString": "tuple()"
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
                     }
                   },
+<<<<<<< HEAD
                   "id": 44,
                   "nodeType": "ExpressionStatement",
                   "src": "1509:53:0"
@@ -984,17 +1004,27 @@
                   "id": 58,
                   "nodeType": "ExpressionStatement",
                   "src": "1634:50:0"
+=======
+                  "id": 9,
+                  "nodeType": "ExpressionStatement",
+                  "src": "396:23:0"
+>>>>>>> parent of bcf44f3... 1 vote per account works
                 }
               ]
             },
             "documentation": null,
+<<<<<<< HEAD
             "id": 60,
+=======
+            "id": 11,
+>>>>>>> parent of bcf44f3... 1 vote per account works
             "implemented": true,
             "kind": "constructor",
             "modifiers": [],
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
+<<<<<<< HEAD
               "id": 29,
               "nodeType": "ParameterList",
               "parameters": [],
@@ -1008,24 +1038,117 @@
             },
             "scope": 130,
             "src": "1413:279:0",
+=======
+              "id": 4,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "375:2:0"
+            },
+            "returnParameters": {
+              "id": 5,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "385:0:0"
+            },
+            "scope": 12,
+            "src": "363:64:0",
+>>>>>>> parent of bcf44f3... 1 vote per account works
             "stateMutability": "nonpayable",
             "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 13,
+        "src": "122:308:0"
+      }
+    ],
+    "src": "95:335:0"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/Christy/Documents/CST/Hackathon/SAP_MediKey/contracts/Election.sol",
+    "exportedSymbols": {
+      "Election": [
+        12
+      ]
+    },
+    "id": 13,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "95:23:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 12,
+        "linearizedBaseContracts": [
+          12
+        ],
+        "name": "Election",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 3,
+            "name": "candidate",
+            "nodeType": "VariableDeclaration",
+            "scope": 12,
+            "src": "250:23:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 2,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "250:6:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": null,
             "visibility": "public"
           },
           {
             "body": {
+<<<<<<< HEAD
               "id": 87,
               "nodeType": "Block",
               "src": "2012:305:0",
+=======
+              "id": 10,
+              "nodeType": "Block",
+              "src": "385:42:0",
+>>>>>>> parent of bcf44f3... 1 vote per account works
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
+<<<<<<< HEAD
                     "id": 72,
+=======
+                    "id": 8,
+>>>>>>> parent of bcf44f3... 1 vote per account works
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
+<<<<<<< HEAD
                     "nodeType": "UnaryOperation",
                     "operator": "++",
                     "prefix": false,
@@ -1098,12 +1221,26 @@
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_Candidate_$14_storage",
                         "typeString": "struct Election.Candidate storage ref"
+=======
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 6,
+                      "name": "candidate",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3,
+                      "src": "396:9:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+>>>>>>> parent of bcf44f3... 1 vote per account works
                       }
                     },
                     "nodeType": "Assignment",
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
+<<<<<<< HEAD
                       "arguments": [
                         {
                           "argumentTypes": null,
@@ -1228,11 +1365,16 @@
                         }
                       },
                       "id": 84,
+=======
+                      "hexValue": "50617469656e742031",
+                      "id": 7,
+>>>>>>> parent of bcf44f3... 1 vote per account works
                       "isConstant": false,
                       "isLValue": false,
-                      "isPure": false,
-                      "kind": "structConstructorCall",
+                      "isPure": true,
+                      "kind": "string",
                       "lValueRequested": false,
+<<<<<<< HEAD
                       "names": [],
                       "nodeType": "FunctionCall",
                       "src": "2240:69:0",
@@ -3769,16 +3911,68 @@
             },
             "scope": 130,
             "src": "2325:492:0",
+=======
+                      "nodeType": "Literal",
+                      "src": "408:11:0",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_stringliteral_8aa4dd96d86b4ca976cb6ef398e7f67be9c9e5dc1b0eadb7ea789df34aec192e",
+                        "typeString": "literal_string \"Patient 1\""
+                      },
+                      "value": "Patient 1"
+                    },
+                    "src": "396:23:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 9,
+                  "nodeType": "ExpressionStatement",
+                  "src": "396:23:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 11,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "375:2:0"
+            },
+            "returnParameters": {
+              "id": 5,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "385:0:0"
+            },
+            "scope": 12,
+            "src": "363:64:0",
+>>>>>>> parent of bcf44f3... 1 vote per account works
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
+<<<<<<< HEAD
         "scope": 131,
         "src": "122:2698:0"
       }
     ],
     "src": "95:2726:0"
+=======
+        "scope": 13,
+        "src": "122:308:0"
+      }
+    ],
+    "src": "95:335:0"
+>>>>>>> parent of bcf44f3... 1 vote per account works
   },
   "compiler": {
     "name": "solc",
@@ -3788,12 +3982,21 @@
     "5777": {
       "events": {},
       "links": {},
+<<<<<<< HEAD
       "address": "0x5Cad9AdCCBbdB2B584ffF22E1C42D2D333A1b879",
       "transactionHash": "0x46c5048de7d4de8a7ed537f56ad6bf211dd7aa8b67e1cecb30df517bfc49fd62"
     }
   },
   "schemaVersion": "3.0.0-beta.2",
   "updatedAt": "2019-03-15T19:04:38.926Z",
+=======
+      "address": "0x63501A9f6b3e6EB71042791F9F64f89527582334",
+      "transactionHash": "0xb9950313e5876c3e83629341e3fcbe19445222fdf082dcfeba250848b22da7d2"
+    }
+  },
+  "schemaVersion": "3.0.0-beta.2",
+  "updatedAt": "2019-03-15T08:39:13.049Z",
+>>>>>>> parent of bcf44f3... 1 vote per account works
   "devdoc": {
     "methods": {}
   },

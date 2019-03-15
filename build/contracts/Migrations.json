@@ -1375,12 +1375,21 @@
     "5777": {
       "events": {},
       "links": {},
+<<<<<<< HEAD
       "address": "0xe4c3e53B9065072AD6cDAc7C2207CB5606B9cA73",
       "transactionHash": "0x572eab245c84cf453538cc24d1bcf221d06e1a33357776d927e5166693db632d"
     }
   },
   "schemaVersion": "3.0.0-beta.2",
   "updatedAt": "2019-03-15T19:04:38.920Z",
+=======
+      "address": "0xfd6b9B72e59F3De73308E16F53583b3c62E07e89",
+      "transactionHash": "0x85c12657c78812a10da19790629a48b279911f7b948cda18c1c1fce46171a2c0"
+    }
+  },
+  "schemaVersion": "3.0.0-beta.2",
+  "updatedAt": "2019-03-15T08:39:13.049Z",
+>>>>>>> parent of bcf44f3... 1 vote per account works
   "devdoc": {
     "methods": {}
   },

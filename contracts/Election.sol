@@ -6,6 +6,7 @@
 pragma solidity ^0.5.0;
 
 contract Election {
+<<<<<<< HEAD
     //Model a Patient; must be instantiated to create a Patient
     struct Candidate {
         //unsigned int = uint
@@ -22,29 +23,17 @@ contract Election {
 
    // Store accounts that have voted
     mapping(address => bool) public voters;
+=======
+    //Store patient
+    //Read patient
+    //public = gives state variable and assigned getter auto
+    string public candidate;
+>>>>>>> parent of bcf44f3... 1 vote per account works
 
-    //Fetch Patient
-    /*Mapping is like associative array or hash w/ key : value
-    Mapping takes the data types expected for each key and pair;
-    in this case, we are storing it with the unsigned integer ids
-    as keys and the Patient struct as the value
-    By declaring it public, we automatically have getter
-    Can't iterate or determine size of map; will return default
-    value of empty Candidate struct */
-    mapping(uint => Candidate) public candidates;
-
-    /* Counter cache keeps track of the number of patients
-    so we can fetch every one and know how many there are in
-    total. Default value is 0 for uint*/
-    uint public candidatesCount;
-
-    // voted event
-    event votedEvent (
-        uint indexed _candidateId
-    );
-
-    //Runs whenever migrated and deployed to blockchain; therefore public
+    //Constructor
+    //Runs whenever deployed to blockchain; therefore public
     constructor () public {
+<<<<<<< HEAD
         addCandidate("Christy Yau", true, "A", "10-09-1989");
         addCandidate("Kelvin Lee", false, "AB", "04-25-1994");
         addCandidate("Lena Kwan", true, "O", "03-10-2010");
@@ -78,5 +67,8 @@ contract Election {
 
         // trigger voted event
         emit votedEvent(_candidateId);
+=======
+        candidate = "Patient 1";
+>>>>>>> parent of bcf44f3... 1 vote per account works
     }
 }

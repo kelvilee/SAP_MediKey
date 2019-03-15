@@ -1,0 +1,45 @@
+[33mcommit 4980f02100f12ec8e904173fbd222534cc129d38[m[33m ([m[1;36mHEAD -> [m[1;32mtest[m[33m)[m
+Author: Christy Yau <abstruse.amaranth@gmail.com>
+Date:   Fri Mar 15 12:13:25 2019 -0700
+
+    Revert "added listener to auto reload"
+    
+    This reverts commit aa61641288ba8251283a9e1c65182ad63c308480.
+
+[33mcommit 4afc9cee855a3b336cbf913c6b37717b02b51329[m
+Author: Christy Yau <abstruse.amaranth@gmail.com>
+Date:   Fri Mar 15 12:07:37 2019 -0700
+
+    testing front end
+
+[33mcommit aa61641288ba8251283a9e1c65182ad63c308480[m[33m ([m[1;31morigin/ethereum-test[m[33m, [m[1;32methereum-test[m[33m)[m
+Author: Christy Yau <abstruse.amaranth@gmail.com>
+Date:   Fri Mar 15 08:56:40 2019 -0700
+
+    added listener to auto reload
+
+[33mcommit bcf44f35a06d49423419340d145fb62b7a96b235[m
+Author: Christy Yau <abstruse.amaranth@gmail.com>
+Date:   Fri Mar 15 08:46:34 2019 -0700
+
+    1 vote per account works
+
+[33mcommit a65268d9986eac6e13ed2d50b7ecb8d89e3389df[m
+Author: Christy Yau <abstruse.amaranth@gmail.com>
+Date:   Fri Mar 15 01:51:22 2019 -0700
+
+    successfully set up Elections constructor; getter works too
+
+[33mcommit 6302b666accf7389b8cba6468a5f268e4d783ee7[m
+Author: Christy Yau <abstruse.amaranth@gmail.com>
+Date:   Fri Mar 15 01:14:36 2019 -0700
+
+    prelim truffle files
+
+[33mcommit dec96c121290e3acf33f02646c88d41f0dd25ba6[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmaster[m[33m)[m
+Author: Lena Kwan <34289576+lenakwan@users.noreply.github.com>
+Date:   Thu Mar 14 17:03:13 2019 -0700
+
+    contract has some issues with add patient
+    
+    please fix function
